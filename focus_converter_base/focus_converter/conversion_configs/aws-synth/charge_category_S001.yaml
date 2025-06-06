@@ -1,0 +1,15 @@
+plan_name: Convert lineItem_LineItemType to ChargeCategory
+conversion_type: sql_condition
+conversion_args:
+    conditions:
+        - WHEN lineItem_LineItemType = 'Usage' THEN 'Usage'
+        - WHEN lineItem_LineItemType = 'SavingsPlanCoveredUsage' THEN 'Usage'
+        - WHEN lineItem_LineItemType = 'SavingsPlanUpfrontFee' THEN 'Purchase'
+        - WHEN lineItem_LineItemType = 'SavingsPlanRecurringFee' THEN 'Purchase'
+        - WHEN lineItem_LineItemType = 'Fee' THEN 'Purchase'
+        - WHEN lineItem_LineItemType = 'Tax' THEN 'Tax'
+        - WHEN lineItem_LineItemType = 'Credit' THEN 'Adjustment'
+        - WHEN lineItem_LineItemType = 'Refund' THEN 'Adjustment'
+    default_value: "'Usage'"
+column: lineItem_LineItemType
+focus_column: ChargeCategory

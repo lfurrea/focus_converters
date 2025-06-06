@@ -4,60 +4,54 @@ column: PlaceHolder
 focus_column: PlaceHolder
 conversion_args:
     dtype_args:
+        # Core identifier columns
         -   column_name: line_item_id
             dtype: string
+        # Billing period columns
         -   column_name: bill_BillingPeriodStartDate
             dtype: string
         -   column_name: bill_BillingPeriodEndDate
             dtype: string
+        # Account columns
         -   column_name: bill_PayerAccountId
             dtype: string
         -   column_name: lineItem_UsageAccountId
             dtype: string
+        # Usage period columns
         -   column_name: lineItem_UsageStartDate
             dtype: string
         -   column_name: lineItem_UsageEndDate
             dtype: string
+        # Product columns
         -   column_name: product_ProductName
             dtype: string
         -   column_name: product_ProductFamily
             dtype: string
-        -   column_name: lineItem_Operation
-            dtype: string
-        -   column_name: lineItem_UsageType
-            dtype: string
+        # Line item type for charge category mapping
         -   column_name: lineItem_LineItemType
             dtype: string
-        -   column_name: pricing_PublicOnDemandCost
-            dtype: float
-        -   column_name: lineItem_UnblendedRate
+        # Cost columns
+        -   column_name: lineItem_UnblendedCost
             dtype: float
         -   column_name: lineItem_UsageAmount
             dtype: float
-        -   column_name: lineItem_UnblendedCost
-            dtype: float
-        -   column_name: savingsPlan_EffectiveCost
-            dtype: float
-        -   column_name: reservation_EffectiveCost
-            dtype: float
         -   column_name: amortisedCost
             dtype: float
-        -   column_name: tax_Type
+        # Currency column
+        -   column_name: lineItem_CurrencyCode
             dtype: string
-        -   column_name: discount_Amount
-            dtype: float
+        # Location columns
         -   column_name: availabilityZone
             dtype: string
         -   column_name: region
             dtype: string
+        # Resource columns
         -   column_name: resourceId
             dtype: string
+        # Pricing column
         -   column_name: pricing_Unit
             dtype: string
-        -   column_name: cost_Category
-            dtype: string
-        -   column_name: lineItem_CurrencyCode
-            dtype: string
+        # Custom fields
         -   column_name: tags
             dtype: string
         -   column_name: updatedAt

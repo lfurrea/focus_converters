@@ -1,6 +1,0 @@
-plan_name: Set ChargeClass with default empty value
-conversion_type: static_value
-conversion_args:
-    static_value: ""
-column: NA
-focus_column: ChargeClass
