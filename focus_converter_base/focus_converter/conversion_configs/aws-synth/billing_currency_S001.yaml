@@ -1,0 +1,8 @@
+plan_name: Convert lineItem_CurrencyCode to BillingCurrency with default USD
+conversion_type: sql_condition
+conversion_args:
+    conditions:
+        - WHEN lineItem_CurrencyCode is not null THEN lineItem_CurrencyCode
+    default_value: "'USD'"
+column: lineItem_CurrencyCode
+focus_column: BillingCurrency

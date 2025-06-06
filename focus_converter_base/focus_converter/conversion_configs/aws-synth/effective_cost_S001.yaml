@@ -1,0 +1,4 @@
+plan_name: Convert amortisedCost to EffectiveCost
+conversion_type: rename_column
+column: amortisedCost
+focus_column: EffectiveCost

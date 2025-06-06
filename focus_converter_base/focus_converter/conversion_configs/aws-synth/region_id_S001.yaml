@@ -1,0 +1,4 @@
+plan_name: Convert region to RegionId
+conversion_type: rename_column
+column: region
+focus_column: RegionId

@@ -1,0 +1,6 @@
+plan_name: Assign FOCUS version
+conversion_type: static_value
+conversion_args:
+    static_value: "1.1"
+column: NA
+focus_column: PlaceHolder

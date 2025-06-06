@@ -1,0 +1,4 @@
+plan_name: Convert bill_PayerAccountId to BillingAccountId
+conversion_type: rename_column
+column: bill_PayerAccountId
+focus_column: BillingAccountId

@@ -1,0 +1,10 @@
+plan_name: Convert product_ProductFamily to ServiceCategory
+conversion_type: sql_condition
+conversion_args:
+    conditions:
+        - WHEN product_ProductFamily = 'Compute' THEN 'Compute'
+        - WHEN product_ProductFamily = 'Storage' THEN 'Storage'
+        - WHEN product_ProductFamily = 'Serverless' THEN 'Compute'
+    default_value: "'Other'"
+column: product_ProductFamily
+focus_column: ServiceCategory

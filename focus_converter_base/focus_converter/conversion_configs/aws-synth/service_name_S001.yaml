@@ -1,0 +1,4 @@
+plan_name: Convert product_ProductName to ServiceName
+conversion_type: rename_column
+column: product_ProductName
+focus_column: ServiceName

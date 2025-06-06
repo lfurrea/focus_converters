@@ -1,0 +1,4 @@
+plan_name: Convert lineItem_UnblendedCost to BilledCost
+conversion_type: rename_column
+column: lineItem_UnblendedCost
+focus_column: BilledCost

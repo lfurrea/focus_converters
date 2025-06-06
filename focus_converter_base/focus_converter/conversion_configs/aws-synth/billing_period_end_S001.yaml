@@ -1,0 +1,5 @@
+plan_name: Parse bill_BillingPeriodEndDate to BillingPeriodEnd
+conversion_type: parse_datetime
+column: bill_BillingPeriodEndDate
+focus_column: BillingPeriodEnd
+conversion_args: "%Y-%m-%dT%H:%M:%SZ"

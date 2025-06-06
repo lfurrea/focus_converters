@@ -1,0 +1,4 @@
+plan_name: Convert lineItem_UsageAmount to ConsumedQuantity
+conversion_type: rename_column
+column: lineItem_UsageAmount
+focus_column: ConsumedQuantity

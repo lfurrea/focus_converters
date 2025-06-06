@@ -1,0 +1,8 @@
+plan_name: Set BillingAccountName with default value
+conversion_type: sql_condition
+conversion_args:
+    conditions:
+        - WHEN bill_PayerAccountId is not null THEN CONCAT('Account-', bill_PayerAccountId)
+    default_value: "'Default Account'"
+column: bill_PayerAccountId
+focus_column: BillingAccountName

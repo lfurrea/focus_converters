@@ -1,0 +1,5 @@
+plan_name: Parse updatedAt to updatedAt with datetime conversion
+conversion_type: parse_datetime
+column: updatedAt
+focus_column: PlaceHolder
+conversion_args: "%Y-%m-%dT%H:%M:%SZ"

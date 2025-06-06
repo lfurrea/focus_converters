@@ -1,0 +1,5 @@
+plan_name: Parse lineItem_UsageEndDate to ChargePeriodEnd
+conversion_type: parse_datetime
+column: lineItem_UsageEndDate
+focus_column: ChargePeriodEnd
+conversion_args: "%Y-%m-%dT%H:%M:%SZ"

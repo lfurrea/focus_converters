@@ -1,0 +1,5 @@
+plan_name: Parse lineItem_UsageStartDate to ChargePeriodStart
+conversion_type: parse_datetime
+column: lineItem_UsageStartDate
+focus_column: ChargePeriodStart
+conversion_args: "%Y-%m-%dT%H:%M:%SZ"

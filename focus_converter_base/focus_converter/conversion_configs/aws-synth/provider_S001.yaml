@@ -1,0 +1,6 @@
+plan_name: Assign provider name for synthetic AWS data
+conversion_type: static_value
+conversion_args:
+    static_value: aws-synth
+column: NA
+focus_column: Provider
